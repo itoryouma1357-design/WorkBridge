@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>マイプロフィール - 年齢フリー仕事マッチング</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <aside class="sidebar" id="sidebar">
+    <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:1rem;">
+      <div class="logo">WorkBridge</div>
+      <button class="sidebar-close-btn" id="sidebar-close" style="background:none; border:none; color:var(--pale); font-size:1.5rem; cursor:pointer; padding:0.5rem;">✕</button>
+    </div>
+    <div class="profile">
+      <div class="profile-avatar">G</div>
+      <div class="profile-info">
+        <div class="profile-name">ゲストさん</div>
+        <div class="profile-rating">★ 4.7</div>
+      </div>
+    </div>
+    <nav>
+      <a href="home.html">ホーム</a>
+      <a href="index.html">仕事一覧</a>
+      <a href="post.html">発注する</a>
+      <a href="worker.html">受注一覧</a>
+      <a href="profile.html">プロフィール編集</a>
+      <a href="view_profile.html">プロフィールを見る</a>
+      <a href="client_register.html">クライアント登録</a>
+      <a href="auth.html">ログイン／登録</a>
+      <a href="terms.html">利用規約</a>
+    </nav>
+  </aside>
+
+  <header>
+    <button id="sidebar-toggle" style="background:none; border:none; color:var(--pale); font-size:1.5rem; cursor:pointer; margin-right:1rem;">☰</button>
+    <h1>マイプロフィール</h1>
+    <nav>
+      <a href="home.html" style="color:var(--pale); margin-right:0.5rem; text-decoration:none">ホーム</a>
+      <a href="index.html" style="color:var(--pale); text-decoration:none">仕事一覧</a>
+    </nav>
+  </header>
+
+  <main style="max-width:900px; margin:2rem auto; padding:1rem;">
+    <div id="profile_view">プロフィールを読み込んでいます…</div>
+  </main>
+
+  <footer>
+    <p>© 2026 Age-Free Jobs — <a href="terms.html">利用規約</a></p>
+  </footer>
+
+  <script src="app.js"></script>
+  <script>
+    document.addEventListener('DOMContentLoaded', function(){
+      if (document.getElementById('profile_view')) {
+        // app.js の renderProfileView を呼び出す
+        if (typeof renderProfileView === 'function') renderProfileView();
+      }
+    });
+  </script>
+</body>
+</html>

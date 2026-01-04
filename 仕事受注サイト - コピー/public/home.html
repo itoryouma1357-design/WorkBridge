@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>WorkBridge - ワークブリッジ - 年齢に関わらない仕事マッチング</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <aside class="sidebar" id="sidebar">
+    <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:1rem;">
+      <div class="logo">WorkBridge</div>
+      <button class="sidebar-close-btn" id="sidebar-close" style="background:none; border:none; color:var(--pale); font-size:1.5rem; cursor:pointer; padding:0.5rem;">✕</button>
+    </div>
+    <div class="profile">
+      <div class="profile-avatar">G</div>
+      <div class="profile-info">
+        <div class="profile-name">ゲストさん</div>
+        <div class="profile-rating">★ 4.7</div>
+      </div>
+    </div>
+    <nav>
+      <a href="home.html">ホーム</a>
+      <a href="index.html">仕事一覧</a>
+      <a href="post.html">発注する</a>
+      <a href="worker.html">受注一覧</a>
+      <a href="profile.html">プロフィール編集</a>
+      <a href="view_profile.html">プロフィールを見る</a>
+      <a href="client_register.html">クライアント登録</a>
+      <a href="auth.html">ログイン／登録</a>
+      <a href="terms.html">利用規約</a>
+    </nav>
+    <div class="cta">
+      <a href="post.html" class="small-btn" style="display:block; text-align:center;">仕事を投稿</a>
+      <a href="auth.html" class="small-btn" style="display:block; text-align:center;">登録/ログイン</a>
+    </div>
+  </aside>
+  <header>
+    <button id="sidebar-toggle" style="background:none; border:none; color:var(--pale); font-size:1.5rem; cursor:pointer; margin-right:1rem;">☰</button>
+    <h1>WorkBridge - ワークブリッジ</h1>
+    <nav>
+      <a href="home.html" style="color:var(--pale); margin-right:0.5rem; text-decoration:none">ホーム</a>
+      <a href="post.html" style="color:var(--pale); margin-right:0.5rem; text-decoration:none">発注する</a>
+      <a href="auth.html" style="color:var(--pale); text-decoration:none">ログイン / 登録</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero section-card" style="text-align:center; padding:3rem 1rem">
+      <h2 style="color:var(--heading-color)">年齢に関わらない、新しい働き方を</h2>
+      <p style="max-width:900px; margin:1rem auto; color:var(--slate); line-height:1.8">
+        WorkBridge(ワークブリッジ)は、経験や年齢で線引きされない仕事の場を提供します。短期の案件から長期のプロジェクトまで、発注者と受注者が公平にマッチングできる設計です。
+        登録はシンプルに「名前・メールアドレス・パスワード」のみで開始できます。プロフィールでスキルや実績を記載して、希望する仕事に応募しましょう。
+      </p>
+      <div style="margin-top:2rem">
+        <a href="auth.html" class="small-btn">ログイン／登録</a>
+        <a href="index.html" class="small-btn" style="background:var(--mid); color:var(--pale);">仕事一覧を見る</a>
+      </div>
+    </section>
+
+    <section class="section-card" style="text-align:center; padding:1.2rem 1rem;">
+      <h3 style="margin-top:0; color:var(--dark)">クイックリンク</h3>
+      <div style="display:flex; gap:0.6rem; justify-content:center; flex-wrap:wrap; margin-top:0.6rem">
+        <a href="home.html" class="small-btn">ホーム</a>
+        <a href="index.html" class="small-btn">仕事一覧</a>
+        <a href="post.html" class="small-btn">発注する</a>
+        <a href="worker.html" class="small-btn">受注一覧</a>
+        <a href="auth.html" class="small-btn">ログイン/登録</a>
+        <a href="profile.html" class="small-btn">プロフィール編集</a>
+        <a href="terms.html" class="small-btn">利用規約</a>
+      </div>
+    </section>
+
+    <section class="section-card" style="padding:2rem 1rem; max-width:960px; margin:0 auto">
+      <h2 style="color:var(--heading-color)">使い方（3ステップ）</h2>
+      <ol style="line-height:1.8; color:var(--slate)">
+        <li><strong>登録：</strong>名前・メール・パスワードで簡単登録（受注者デフォルト）。</li>
+        <li><strong>投稿／応募：</strong>発注者は仕事を投稿、受注者は応募して選ばれるのを待ちます。</li>
+        <li><strong>開始：</strong>承認されたらチャットや外部でやり取りをして業務開始します。</li>
+      </ol>
+
+      <h2 style="color:var(--dark); margin-top:1.6rem">特徴</h2>
+      <ul style="color:var(--slate); line-height:1.8">
+        <li>年齢に依存しないマッチング：経験やスキルを重視します。</li>
+        <li>シンプルな登録：すぐに応募や投稿が可能。</li>
+        <li>軽快なUI：必要な操作だけに集中できるデザイン。</li>
+      </ul>
+
+      <h2 style="color:var(--dark); margin-top:1.6rem">よくある質問（FAQ）</h2>
+      <details style="margin-bottom:0.8rem"><summary style="cursor:pointer">Q: 登録は無料ですか？</summary><p style="margin:0.6rem 0 0; color:var(--slate)">A: はい、登録は無料です。プラットフォーム利用料の導入は今後の予定です。</p></details>
+      <details style="margin-bottom:0.8rem"><summary style="cursor:pointer">Q: 発注者になるには？</summary><p style="margin:0.6rem 0 0; color:var(--slate)">A: 今は簡易登録で受注者がデフォルトです。発注者に切り替える機能は設定画面で実装予定です。</p></details>
+
+      <h2 style="color:var(--dark); margin-top:1.6rem">利用者の声</h2>
+      <div style="display:flex; gap:1rem; flex-wrap:wrap">
+        <blockquote style="background:var(--card-bg); padding:1rem; border-radius:8px; width:300px; color:var(--slate); border:1px solid rgba(63,95,85,0.06)">"年齢を気にせず応募できて助かりました。案件も探しやすいです。" — 50代・受注者</blockquote>
+        <blockquote style="background:var(--card-bg); padding:1rem; border-radius:8px; width:300px; color:var(--slate); border:1px solid rgba(63,95,85,0.06)">"幅広い世代の応募があり、最適な人材が見つかりました。" — 発注者</blockquote>
+      </div>
+      
+      <h2 style="color:var(--dark); margin-top:1.6rem">他社との比較（簡易）</h2>
+      <div style="max-width:960px; margin:0 auto; overflow:auto;">
+        <table style="width:100%; border-collapse:collapse; color:var(--slate);">
+          <thead>
+            <tr style="text-align:left; border-bottom:1px solid rgba(0,0,0,0.06)"><th>項目</th><th>当サイト</th><th>大手A</th><th>大手B</th></tr>
+          </thead>
+          <tbody>
+            <tr><td style="padding:0.6rem 0">対象</td><td style="padding:0.6rem 0">全年代（年齢非依存）</td><td>主に若年・中堅</td><td>幅広いが手数料高め</td></tr>
+            <tr><td style="padding:0.6rem 0">利用料金</td><td style="padding:0.6rem 0">低〜中（予定）</td><td>中〜高</td><td>高</td></tr>
+            <tr><td style="padding:0.6rem 0">審査</td><td style="padding:0.6rem 0">簡易登録→プロフィール重視</td><td>スキル審査あり</td><td>企業向け審査あり</td></tr>
+            <tr><td style="padding:0.6rem 0">サポート</td><td style="padding:0.6rem 0">メール・FAQ（順次拡充）</td><td>チャット/電話あり</td><td>手厚いサポート</td></tr>
+          </tbody>
+        </table>
+      </div>
+
+      <h2 style="color:var(--dark); margin-top:1.6rem">安心して使えるために</h2>
+      <ul style="color:var(--slate); line-height:1.8">
+        <li>本人確認や評価システムで信頼度を可視化します（実装予定）。</li>
+        <li>支払いはプラットフォーム経由でのエスクロー検討中です。</li>
+        <li>プライバシーを尊重し、個人情報は必要最小限のみ収集します。</li>
+      </ul>
+
+      <h2 style="color:var(--dark); margin-top:1.6rem">料金（現状、参考）</h2>
+      <p style="color:var(--slate)">現時点では試験運用期間のため、利用料は無料です。将来的には成功報酬型やサブスクリプションの導入を検討します（詳細は今後公開予定）。</p>
+      
+      <h2 style="color:var(--dark); margin-top:1.6rem">導入事例・ケーススタディ（サンプル）</h2>
+      <div style="display:flex; gap:1rem; flex-wrap:wrap;">
+        <div style="background:var(--card-bg); padding:1rem; border-radius:8px; width:280px; border:1px solid rgba(63,95,85,0.06)">
+          <h4>ケース1：中小企業のWeb刷新</h4>
+          <p style="color:var(--slate)">課題：低予算でサイトリニューアル。結果：若手〜シニアまで幅広い応募で適任者を発見、3週間で納品。</p>
+        </div>
+        <div style="background:var(--card-bg); padding:1rem; border-radius:8px; width:280px; border:1px solid rgba(63,95,85,0.06)">
+          <h4>ケース2：短期翻訳プロジェクト</h4>
+          <p style="color:var(--slate)">課題：多言語対応の緊急案件。結果：複数応募の中から専門性の高い受注者を選定、品質確保。</p>
+        </div>
+      </div>
+
+      <h2 style="color:var(--dark); margin-top:1.6rem">機能詳細</h2>
+      <ul style="color:var(--slate); line-height:1.8">
+        <li>プロフィールに実績・評価を掲載し、検索で優先表示が可能（予定）。</li>
+        <li>発注側の募集テンプレートと応募テンプレートでやり取りを簡素化。</li>
+        <li>募集の公開範囲設定（公開/非公開/招待制）や募集人数の指定。</li>
+      </ul>
+
+      <h2 style="color:var(--dark); margin-top:1.6rem">料金プラン（サンプル）</h2>
+      <div style="display:flex; gap:1rem; flex-wrap:wrap;">
+        <div style="flex:1; min-width:220px; background:var(--card-bg); padding:1rem; border-radius:8px; border:1px solid rgba(63,95,85,0.06)">
+          <h4>フリープラン</h4>
+          <p style="color:var(--slate)">無料。基本機能で小規模のやり取りに最適。</p>
+        </div>
+        <div style="flex:1; min-width:220px; background:var(--card-bg); padding:1rem; border-radius:8px; border:1px solid rgba(63,95,85,0.06)">
+          <h4>ビジネスプラン（予定）</h4>
+          <p style="color:var(--slate)">月額 + 手数料の組合せで専用サポートや優先掲載を提供予定。</p>
+        </div>
+      </div>
+
+      <h2 style="color:var(--dark); margin-top:1.6rem">導入の流れ</h2>
+      <ol style="color:var(--slate); line-height:1.8">
+        <li>アカウント作成 → プロフィール登録</li>
+        <li>案件作成（テンプレート利用可） → 応募受付</li>
+        <li>候補者と合意 → 仕事開始 → 完了後に評価</li>
+      </ol>
+
+      <h2 style="color:var(--dark); margin-top:1.6rem">ロードマップ（予定）</h2>
+      <ul style="color:var(--slate); line-height:1.8">
+        <li>短期（〜3ヶ月）：UI改善、モバイル最適化、評価機能実装</li>
+        <li>中期（3〜9ヶ月）：支払いエスクロー、本人確認導入、企業向けプラン</li>
+        <li>長期（9ヶ月〜）：API提供、外部ツール連携、国際展開</li>
+      </ul>
+
+      <h2 style="color:var(--dark); margin-top:1.6rem">よくある質問（追加）</h2>
+      <details style="margin-bottom:0.8rem"><summary style="cursor:pointer">Q: 年齢を理由に応募が制限されますか？</summary><p style="margin:0.6rem 0 0; color:var(--slate)">A: 原則として年齢での制限は行いません。案件によっては経験や資格が求められることがあります。</p></details>
+      <details style="margin-bottom:0.8rem"><summary style="cursor:pointer">Q: 支払いはどうなりますか？</summary><p style="margin:0.6rem 0 0; color:var(--slate)">A: 現状は当事者間でのやり取りを想定しています。将来的にエスクロー等の仕組みを導入予定です。</p></details>
+
+      <h2 style="color:var(--dark); margin-top:1.6rem">掲載・パートナー（サンプル）</h2>
+      <p style="color:var(--slate)">メディア掲載やパートナー連携を順次拡大中です（アイコンやロゴは後で追加）。</p>
+
+      <h2 style="color:var(--dark); margin-top:1.6rem">主要指標（ダミー）</h2>
+      <div style="display:flex; gap:1rem; flex-wrap:wrap;">
+        <div style="background:var(--card-bg); padding:1rem; border-radius:8px; min-width:150px; text-align:center; border:1px solid rgba(63,95,85,0.06)">
+          <div style="font-size:1.6rem; font-weight:700">1,200+</div>
+          <div style="color:var(--slate)">登録ユーザー</div>
+        </div>
+        <div style="background:var(--card-bg); padding:1rem; border-radius:8px; min-width:150px; text-align:center; border:1px solid rgba(63,95,85,0.06)">
+          <div style="font-size:1.6rem; font-weight:700">350+</div>
+          <div style="color:var(--slate)">掲載案件数</div>
+        </div>
+        <div style="background:var(--card-bg); padding:1rem; border-radius:8px; min-width:150px; text-align:center; border:1px solid rgba(63,95,85,0.06)">
+          <div style="font-size:1.6rem; font-weight:700">4.7</div>
+          <div style="color:var(--slate)">平均評価（仮）</div>
+        </div>
+      </div>
+
+      <h2 style="color:var(--dark); margin-top:1.6rem">注目の事例（横スクロール）</h2>
+      <div style="overflow:hidden; border-radius:8px; background:var(--soft);">
+        <div style="display:flex; gap:1.2rem; padding:1.5rem; animation:horizontalScroll 20s linear infinite;">
+          <div style="background:linear-gradient(135deg, #3F5F55, #9FBF99); padding:1.5rem; border-radius:8px; min-width:140px; height:280px; color:var(--pale); flex-shrink:0; display:flex; flex-direction:column; justify-content:space-between;">
+            <div>
+              <h4 style="margin-top:0; color:var(--pale); font-size:0.95rem;">ダミー事例 1</h4>
+              <p style="margin:0.5rem 0 0; color:rgba(255,255,255,0.95); font-size:0.85rem; line-height:1.4;">Web制作チーム</p>
+            </div>
+            <div style="font-weight:700; color:var(--pale); font-size:0.9rem;">✓ 高評価</div>
+          </div>
+          <div style="background:linear-gradient(135deg, #9FBF99, #3F5F55); padding:1.5rem; border-radius:8px; min-width:140px; height:280px; color:var(--pale); flex-shrink:0; display:flex; flex-direction:column; justify-content:space-between;">
+            <div>
+              <h4 style="margin-top:0; color:var(--pale); font-size:0.95rem;">ダミー事例 2</h4>
+              <p style="margin:0.5rem 0 0; color:rgba(255,255,255,0.95); font-size:0.85rem; line-height:1.4;">翻訳プロジェクト</p>
+            </div>
+            <div style="font-weight:700; color:var(--pale); font-size:0.9rem;">✓ 高評価</div>
+          </div>
+          <div style="background:linear-gradient(135deg, #3F5F55, #9FBF99); padding:1.5rem; border-radius:8px; min-width:140px; height:280px; color:var(--pale); flex-shrink:0; display:flex; flex-direction:column; justify-content:space-between;">
+            <div>
+              <h4 style="margin-top:0; color:var(--pale); font-size:0.95rem;">ダミー事例 3</h4>
+              <p style="margin:0.5rem 0 0; color:rgba(255,255,255,0.95); font-size:0.85rem; line-height:1.4;">マーケティング</p>
+            </div>
+            <div style="font-weight:700; color:var(--pale); font-size:0.9rem;">✓ 高評価</div>
+          </div>
+          <div style="background:linear-gradient(135deg, #9FBF99, #3F5F55); padding:1.5rem; border-radius:8px; min-width:140px; height:280px; color:var(--pale); flex-shrink:0; display:flex; flex-direction:column; justify-content:space-between;">
+            <div>
+              <h4 style="margin-top:0; color:var(--pale); font-size:0.95rem;">ダミー事例 4</h4>
+              <p style="margin:0.5rem 0 0; color:rgba(255,255,255,0.95); font-size:0.85rem; line-height:1.4;">データ分析</p>
+            </div>
+            <div style="font-weight:700; color:var(--pale); font-size:0.9rem;">✓ 高評価</div>
+          </div>
+          <div style="background:linear-gradient(135deg, #3F5F55, #9FBF99); padding:1.5rem; border-radius:8px; min-width:140px; height:280px; color:var(--pale); flex-shrink:0; display:flex; flex-direction:column; justify-content:space-between;">
+            <div>
+              <h4 style="margin-top:0; color:var(--pale); font-size:0.95rem;">ダミー事例 5</h4>
+              <p style="margin:0.5rem 0 0; color:rgba(255,255,255,0.95); font-size:0.85rem; line-height:1.4;">UI/UXデザイン</p>
+            </div>
+            <div style="font-weight:700; color:var(--pale); font-size:0.9rem;">✓ 高評価</div>
+          </div>
+          <div style="background:linear-gradient(135deg, #9FBF99, #3F5F55); padding:1.5rem; border-radius:8px; min-width:140px; height:280px; color:var(--pale); flex-shrink:0; display:flex; flex-direction:column; justify-content:space-between;">
+            <div>
+              <h4 style="margin-top:0; color:var(--pale); font-size:0.95rem;">ダミー事例 6</h4>
+              <p style="margin:0.5rem 0 0; color:rgba(255,255,255,0.95); font-size:0.85rem; line-height:1.4;">システム開発</p>
+            </div>
+            <div style="font-weight:700; color:var(--pale); font-size:0.9rem;">✓ 高評価</div>
+          </div>
+          <div style="background:linear-gradient(135deg, #3F5F55, #9FBF99); padding:1.5rem; border-radius:8px; min-width:140px; height:280px; color:var(--pale); flex-shrink:0; display:flex; flex-direction:column; justify-content:space-between;">
+            <div>
+              <h4 style="margin-top:0; color:var(--pale); font-size:0.95rem;">ダミー事例 1</h4>
+              <p style="margin:0.5rem 0 0; color:rgba(255,255,255,0.95); font-size:0.85rem; line-height:1.4;">Web制作チーム</p>
+            </div>
+            <div style="font-weight:700; color:var(--pale); font-size:0.9rem;">✓ 高評価</div>
+          </div>
+          <div style="background:linear-gradient(135deg, #9FBF99, #3F5F55); padding:1.5rem; border-radius:8px; min-width:140px; height:280px; color:var(--pale); flex-shrink:0; display:flex; flex-direction:column; justify-content:space-between;">
+            <div>
+              <h4 style="margin-top:0; color:var(--pale); font-size:0.95rem;">ダミー事例 2</h4>
+              <p style="margin:0.5rem 0 0; color:rgba(255,255,255,0.95); font-size:0.85rem; line-height:1.4;">翻訳プロジェクト</p>
+            </div>
+            <div style="font-weight:700; color:var(--pale); font-size:0.9rem;">✓ 高評価</div>
+          </div>
+          <div style="background:linear-gradient(135deg, #3F5F55, #9FBF99); padding:1.5rem; border-radius:8px; min-width:140px; height:280px; color:var(--pale); flex-shrink:0; display:flex; flex-direction:column; justify-content:space-between;">
+            <div>
+              <h4 style="margin-top:0; color:var(--pale); font-size:0.95rem;">ダミー事例 3</h4>
+              <p style="margin:0.5rem 0 0; color:rgba(255,255,255,0.95); font-size:0.85rem; line-height:1.4;">マーケティング</p>
+            </div>
+            <div style="font-weight:700; color:var(--pale); font-size:0.9rem;">✓ 高評価</div>
+          </div>
+          <div style="background:linear-gradient(135deg, #9FBF99, #3F5F55); padding:1.5rem; border-radius:8px; min-width:140px; height:280px; color:var(--pale); flex-shrink:0; display:flex; flex-direction:column; justify-content:space-between;">
+            <div>
+              <h4 style="margin-top:0; color:var(--pale); font-size:0.95rem;">ダミー事例 4</h4>
+              <p style="margin:0.5rem 0 0; color:rgba(255,255,255,0.95); font-size:0.85rem; line-height:1.4;">データ分析</p>
+            </div>
+            <div style="font-weight:700; color:var(--pale); font-size:0.9rem;">✓ 高評価</div>
+          </div>
+          <div style="background:linear-gradient(135deg, #3F5F55, #9FBF99); padding:1.5rem; border-radius:8px; min-width:140px; height:280px; color:var(--pale); flex-shrink:0; display:flex; flex-direction:column; justify-content:space-between;">
+            <div>
+              <h4 style="margin-top:0; color:var(--pale); font-size:0.95rem;">ダミー事例 5</h4>
+              <p style="margin:0.5rem 0 0; color:rgba(255,255,255,0.95); font-size:0.85rem; line-height:1.4;">UI/UXデザイン</p>
+            </div>
+            <div style="font-weight:700; color:var(--pale); font-size:0.9rem;">✓ 高評価</div>
+          </div>
+          <div style="background:linear-gradient(135deg, #9FBF99, #3F5F55); padding:1.5rem; border-radius:8px; min-width:140px; height:280px; color:var(--pale); flex-shrink:0; display:flex; flex-direction:column; justify-content:space-between;">
+            <div>
+              <h4 style="margin-top:0; color:var(--pale); font-size:0.95rem;">ダミー事例 6</h4>
+              <p style="margin:0.5rem 0 0; color:rgba(255,255,255,0.95); font-size:0.85rem; line-height:1.4;">システム開発</p>
+            </div>
+            <div style="font-weight:700; color:var(--pale); font-size:0.9rem;">✓ 高評価</div>
+          </div>
+        </div>
+      </div>
+
+      <h2 style="color:var(--dark); margin-top:1.6rem">お問い合わせ・はじめる</h2>
+      <p style="color:var(--slate)">まずは会員登録してプロフィールを作成してください。不明点は support@example.com まで（サンプルメールアドレス）。</p>
+      <div style="margin-top:1rem"><a href="auth.html" class="small-btn">今すぐ登録／ログイン</a> <a href="post.html" class="small-btn" style="background:var(--mid); color:var(--pale)">発注を始める</a></div>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2026 WorkBridge - ワークブリッジ — <a href="terms.html">利用規約</a></p>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>

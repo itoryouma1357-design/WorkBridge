@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>プロフィール設定 - 年齢フリー仕事マッチング</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <aside class="sidebar" id="sidebar">
+    <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:1rem;">
+      <div class="logo">WorkBridge</div>
+      <button class="sidebar-close-btn" id="sidebar-close" style="background:none; border:none; color:var(--pale); font-size:1.5rem; cursor:pointer; padding:0.5rem;">✕</button>
+    </div>
+    <div class="profile">
+      <div class="profile-avatar">G</div>
+      <div class="profile-info">
+        <div class="profile-name">ゲストさん</div>
+        <div class="profile-rating">★ 4.7</div>
+      </div>
+    </div>
+    <nav>
+      <a href="home.html">ホーム</a>
+      <a href="index.html">仕事一覧</a>
+      <a href="post.html">発注する</a>
+      <a href="worker.html">受注一覧</a>
+      <a href="profile.html">プロフィール編集</a>
+      <a href="view_profile.html">プロフィールを見る</a>
+      <a href="client_register.html">クライアント登録</a>
+      <a href="auth.html">ログイン／登録</a>
+      <a href="terms.html">利用規約</a>
+    </nav>
+    <div class="cta">
+      <a href="post.html" class="small-btn" style="display:block; text-align:center;">仕事を投稿</a>
+      <a href="auth.html" class="small-btn" style="display:block; text-align:center;">登録/ログイン</a>
+    </div>
+  </aside>
+
+  <header>
+    <button id="sidebar-toggle" style="background:none; border:none; color:var(--pale); font-size:1.5rem; cursor:pointer; margin-right:1rem;">☰</button>
+    <h1>プロフィール設定</h1>
+    <nav>
+      <a href="home.html" style="color:var(--pale); margin-right:0.5rem; text-decoration:none">ホーム</a>
+      <a href="index.html" style="color:var(--pale); text-decoration:none">仕事一覧</a>
+    </nav>
+  </header>
+
+  <main style="max-width:800px; margin:2rem auto; padding:1rem;">
+    <section class="auth-card">
+      <h2>プロフィールを入力してください</h2>
+      <label>ユーザーネーム</label>
+      <input type="text" id="pf_username" name="username" placeholder="ユーザーネーム" />
+
+      <label>自己紹介</label>
+      <textarea id="pf_bio" name="bio" placeholder="あなたのスキルや自己紹介を書いてください" rows="4"></textarea>
+
+      <label>実績（過去の仕事やポートフォリオ）</label>
+      <textarea id="pf_achievements" name="achievements" placeholder="実績やリンクを記載" rows="3"></textarea>
+
+      <label>稼働時間帯（例: 平日 9:00-17:00）</label>
+      <input type="text" id="pf_availability" name="availability" placeholder="稼働時間帯を記載" />
+
+      <button id="saveProfileBtn">プロフィールを保存</button>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2026 Age-Free Jobs — <a href="terms.html">利用規約</a></p>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>

@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>発注者登録 - 年齢フリー仕事マッチング</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <aside class="sidebar" id="sidebar">
+    <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:1rem;">
+      <div class="logo">WorkBridge</div>
+      <button class="sidebar-close-btn" id="sidebar-close" style="background:none; border:none; color:var(--pale); font-size:1.5rem; cursor:pointer; padding:0.5rem;">✕</button>
+    </div>
+    <div class="profile">
+      <div class="profile-avatar">G</div>
+      <div class="profile-info">
+        <div class="profile-name">ゲストさん</div>
+        <div class="profile-rating">★ 4.7</div>
+      </div>
+    </div>
+    <nav>
+      <a href="home.html">ホーム</a>
+      <a href="index.html">仕事一覧</a>
+      <a href="post.html">発注する</a>
+      <a href="worker.html">受注一覧</a>
+      <a href="profile.html">プロフィール編集</a>
+      <a href="view_profile.html">プロフィールを見る</a>
+      <a href="client_register.html">クライアント登録</a>
+      <a href="auth.html">ログイン／登録</a>
+      <a href="terms.html">利用規約</a>
+    </nav>
+    <div class="cta">
+      <a href="post.html" class="small-btn" style="display:block; text-align:center;">仕事を投稿</a>
+      <a href="auth.html" class="small-btn" style="display:block; text-align:center;">登録/ログイン</a>
+    </div>
+  </aside>
+
+  <header>
+    <button id="sidebar-toggle" style="background:none; border:none; color:var(--pale); font-size:1.5rem; cursor:pointer; margin-right:1rem;">☰</button>
+    <h1>発注者登録（個人 / 法人）</h1>
+    <nav>
+      <a href="home.html" style="color:var(--pale); margin-right:0.5rem; text-decoration:none">ホーム</a>
+      <a href="index.html" style="color:var(--pale); text-decoration:none">仕事一覧</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="auth-container">
+      <div class="auth-card">
+        <h2>個人（事業主）として登録</h2>
+        <form id="clientRegisterForm">
+          <input type="text" name="companyName" placeholder="屋号（任意）」 />
+          <input type="text" name="contactName" placeholder="担当者名 / 氏名" required />
+          <input type="text" name="mail" placeholder="メールアドレス" required />
+          <input type="password" name="password" placeholder="パスワード" required />
+          <input type="tel" name="phone" placeholder="電話番号（任意）" />
+          <label style="display:flex; align-items:center; gap:0.5rem; font-size:0.95rem; color:var(--slate); margin-top:0.6rem;">
+            <input type="checkbox" name="terms" value="1" required /> 利用規約に同意します
+            <a href="terms.html" target="_blank" style="margin-left:0.5rem; color:var(--dark)">利用規約を確認</a>
+          </label>
+          <div style="margin-top:0.6rem; font-size:0.9rem; color:var(--slate)">個人で発注する方はこちらを選んでください。</div>
+          <button type="submit" style="margin-top:0.6rem">個人発注者として登録</button>
+        </form>
+      </div>
+
+      <div class="auth-card">
+        <h2>法人として登録</h2>
+        <form id="corpRegisterForm">
+          <input type="text" name="companyName" placeholder="法人名（必須）" required />
+          <input type="text" name="corporateNumber" placeholder="法人番号（任意）" />
+          <input type="text" name="contactName" placeholder="担当者名（必須）" required />
+          <input type="text" name="mail" placeholder="連絡用メール" required />
+          <input type="password" name="password" placeholder="パスワード" required />
+          <input type="tel" name="phone" placeholder="代表電話（任意）" />
+          <label style="display:flex; align-items:center; gap:0.5rem; font-size:0.95rem; color:var(--slate); margin-top:0.6rem;">
+            <input type="checkbox" name="terms" value="1" required /> 利用規約に同意します
+            <a href="terms.html" target="_blank" style="margin-left:0.5rem; color:var(--dark)">利用規約を確認</a>
+          </label>
+          <div style="margin-top:0.6rem; font-size:0.9rem; color:var(--slate)">法人として発注する場合はこちらから登録してください。</div>
+          <button type="submit" style="margin-top:0.6rem">法人発注者として登録</button>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2026 Age-Free Jobs — <a href="terms.html">利用規約</a></p>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>
